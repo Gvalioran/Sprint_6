@@ -5,3 +5,4 @@ class BasePageLocators:
     ACCEPT_COOKIES = (By.XPATH, ".//*[@id='rcc-confirm-button']")
     YANDEX = (By.XPATH, ".//*[@alt='Yandex']")
     LOGO_SCOOTER = (By.XPATH, ".//*[@alt='Scooter']")
+    LOGO_YA = (By.XPATH, ".//*[@tabindex='0']")

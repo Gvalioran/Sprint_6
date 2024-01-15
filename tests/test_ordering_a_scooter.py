@@ -15,5 +15,9 @@ class TestOrderingScooter:
         order_page = OrderPage(driver)
         order_page.transition_site(Url.BASE_URL)
         order_page.accept_the_cookies()
-        result = order_page.entering_test_data(button_order, data)
+        order_page.transition_order(button_order)
+        order_page.entering_test_data_page1(data)
+        order_page.transition_page2()
+        order_page.entering_test_data_page2(data)
+        result = order_page.checking_completed_order()
         assert result == "Посмотреть статус"
